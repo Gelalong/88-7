@@ -52,7 +52,6 @@ header {
   transform-origin: center;
 }
 
-
 .nav-links {
   display: flex;
   list-style: none;
@@ -88,15 +87,20 @@ header {
 }
 
 .hero-content {
-  max-width: 800px;
+  max-width: 100%; /* 修改这里，使其占据全宽 */
   padding: 30px;
+  width: 100%; /* 添加这行 */
 }
 
 .hero h1 {
   font-size: 3.5rem;
   margin-bottom: 20px;
   animation: fadeInUp 1s ease;
-  white-space: nowrap; /* Prevents line break */
+  white-space: nowrap; /* 防止换行 */
+  width: 100%; /* 确保标题占据全宽 */
+  text-align: center; /* 文本居中 */
+  overflow: hidden; /* 防止溢出 */
+  text-overflow: ellipsis; /* 如果文本溢出，显示省略号 */
 }
 
 .hero p {
